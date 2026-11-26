@@ -129,8 +129,8 @@ flowchart TD
 ### Option A: Install Pre-Built Laptop SDK (Fastest)
 ```bash
 # Clone the repository
-git clone https://github.com/Orionpluxary/ClampPVM.git
-cd ClampPVM
+git clone https://github.com/roymoumita9875-tech/clampPvm.git
+cd clampPvm
 
 # Run the installer script (extracts to /opt/clamp-pvm and links /usr/local/bin/clamp-python)
 sudo bash scripts/install.sh
