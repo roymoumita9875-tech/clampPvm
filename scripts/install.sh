@@ -16,8 +16,8 @@ TARBALL="${1:-${REPO_ROOT}/dist/clamp-pvm-sdk.tar.gz}"
 
 if [ ! -f "$TARBALL" ]; then
     # Fallback check in pvm-clamp home dir
-    if [ -f "/home/subha/pvm-clamp/clamp-pvm-sdk.tar.gz" ]; then
-        TARBALL="/home/subha/pvm-clamp/clamp-pvm-sdk.tar.gz"
+    if [ -f "${HOME}/pvm-clamp/clamp-pvm-sdk.tar.gz" ]; then
+        TARBALL="${HOME}/pvm-clamp/clamp-pvm-sdk.tar.gz"
     else
         echo "Error: ClampPVM SDK archive not found at: $TARBALL"
         echo "Please generate the archive first using scripts/build.sh"

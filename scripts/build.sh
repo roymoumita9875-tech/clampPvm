@@ -10,7 +10,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-CPYTHON_SRC="${1:-/home/subha/pvm-clamp/cpython-src}"
+CPYTHON_SRC="${1:-${HOME}/pvm-clamp/cpython-src}"
 
 if [ ! -d "$CPYTHON_SRC" ]; then
     echo "CPython source tree not found at $CPYTHON_SRC"
